@@ -13,6 +13,7 @@ class AddProductController: UITableViewController {
     @IBOutlet var photoImageView: UIImageView!{
         didSet{
             photoImageView.layer.cornerRadius = 10.0
+            photoImageView.layer.masksToBounds = true
         }
     }
 
