@@ -7,10 +7,14 @@
 
 import Foundation
 
+enum TabItem: String, CaseIterable{
+    case refrigetor = "refrigerator"
+    case cellar = "cellar"
+    case addProduct = "add product"
+}
 
 
-
-enum ProductGroup : CaseIterable {
+enum ProductGroup : CaseIterable{
     case FruitsAndVeggies
     case MeatChickenFish
     case Dairy
@@ -21,10 +25,23 @@ enum ProductGroup : CaseIterable {
     case Beverage
 }
 
-enum AmountType : CaseIterable {
-    case Kg, Pcs
+
+enum ProductType : String, CaseIterable {
+    case Milk = "Milk", Egg = "Egg", Bread = "Bread" , Butter = "Butter"
     
-    var cases: [String]{
-        return [""]
+    var productGroup : ProductGroup {
+        switch self {
+        case .Milk, .Egg, .Butter:
+            return .Dairy
+        case .Bread:
+            return .Bakery
+        }
     }
+}
+
+
+
+
+enum AmountType : String, CaseIterable {
+    case Piece = "Pcs", Weight = "kg", Volume = "L"
 }

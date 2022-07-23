@@ -10,7 +10,7 @@
         <scene sceneID="QyB-hp-RSv">
             <objects>
                 <tabBarController id="cE4-8X-SRZ" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T7V-19-xGA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T7V-19-xGA" customClass="CustomTabBar" customModule="Ambar" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -18,32 +18,11 @@
                     <connections>
                         <segue destination="MpO-Ll-SGr" kind="relationship" relationship="viewControllers" id="sW4-TF-Y4a"/>
                         <segue destination="HN2-sv-Nr1" kind="relationship" relationship="viewControllers" id="fIu-eO-Mgz"/>
-                        <segue destination="H28-hg-3s8" kind="relationship" relationship="viewControllers" id="mwD-lN-CCc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpA-2E-Zqt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-781" y="121"/>
-        </scene>
-        <!--AddProduct-->
-        <scene sceneID="890-nM-l23">
-            <objects>
-                <viewControllerPlaceholder storyboardName="AddProduct" id="H28-hg-3s8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="81A-uw-gEm"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3TI-8z-3DW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="54" y="412"/>
-        </scene>
-        <!--Cellar-->
-        <scene sceneID="PYu-gl-XOn">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Cellar" id="HN2-sv-Nr1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ZEh-AT-pcG"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HvA-Aw-vux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="81" y="121"/>
         </scene>
         <!--Refrigerator-->
         <scene sceneID="0LQ-Uw-ZrM">
@@ -53,7 +32,22 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xNY-iT-3aq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="81" y="-171"/>
+            <point key="canvasLocation" x="25" y="-171"/>
+        </scene>
+        <!--Cellar-->
+        <scene sceneID="PYu-gl-XOn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Cellar" id="HN2-sv-Nr1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ZEh-AT-pcG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HvA-Aw-vux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3" y="404"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="T7V-19-xGA">
+            <size key="intrinsicContentSize" width="-1" height="83"/>
+        </designable>
+    </designables>
 </document>
